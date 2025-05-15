@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <title>Rocco</title>
+
+  <style>
+    /* RESET */
+    html {
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ol,
+    ul {
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* STYLE */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      padding: 0 15px;
+      align-items: center;
+      background-size: 50%;
+      justify-content: center;
+      background-position: center;
+      background-image: url('https://pitstop.vteximg.com.br/arquivos/rocco-bg.png');
+    }
+
+    .box {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 4px;
+      padding: 15px 15px 25px;
+      background-color: #111;
+    }
+
+    .logo {
+      width: 125px;
+      height: auto;
+      display: block;
+      margin: 0 auto 15px;
+    }
+
+    input {
+      width: 100%;
+      height: 45px;
+      border: none;
+      outline: none;
+      color: #000;
+      font-size: 18px;
+      font-weight: 400;
+      text-indent: 15px;
+      border-radius: 4px;
+      background-color: #fff;
+      font-family: "Montserrat", sans-serif;
+      box-shadow: 6px 6px 0px 0px #299c36;
+    }
+
+    @media (max-width: 768px) {
+      .box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Widget JavaScript bundle -->
+  <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
+  <!-- Search widget element is not visible by default -->
+  <gen-search-widget configId="5889aff1-5bb8-4bd3-8a79-35f26746ace5" triggerId="searchWidgetTrigger">
+  </gen-search-widget>
+
+  <div class="container">
+    <div class="box">
+      <img src="https://pitstop.vteximg.com.br/arquivos/rocco-logo-white.png?v=2" class="logo" />
+      <br />
+      <!-- Element that opens the widget on click. It does not have to be an input -->
+      <input type="text" id="searchWidgetTrigger" placeholder="Pergunte ao ROCCO.." />
+    </div>
+  </div>
+</body>
+
+</html>
